@@ -1,0 +1,72 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 300px;
+    height: 100%;
+    padding: 2rem 1.5rem;
+    color: #222222;
+    background-color: var(--color-primary);
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px #a1a1a1;
+    overflow: auto;
+    overflow-x: hidden;
+    font-family: var(--font-family);
+}
+
+.sidebar-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 2.5rem;
+    gap: 3rem;
+}
+
+
+.sidebar-header span {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+/* Estilo geral da barra de rolagem */
+::-webkit-scrollbar {
+    width: 5px;
+    /* Largura da barra de rolagem */
+}
+
+/* Background da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    background-color: #555;
+    /* Cor da barra de rolagem */
+    border-radius: 10px;
+    /* Curvatura da barra de rolagem */
+}
+
+/* Background da "seta" na extremidade da barra de rolagem */
+::-webkit-scrollbar-button {
+    display: none;
+    /* Oculta a "seta" na extremidade da barra de rolagem */
+}
+
+/* Background da área que a barra de rolagem cobre */
+::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+    /* Cor da área que a barra de rolagem cobre */
+}
+
+@media (max-width: 550px) {
+    .sidebar {
+        position: fixed;
+        z-index: 999;
+    }
+}

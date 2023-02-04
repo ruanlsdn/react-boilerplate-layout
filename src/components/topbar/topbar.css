@@ -1,0 +1,75 @@
+.topbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 4.5rem;
+    margin: 1rem 2rem;
+    padding: 1rem 1rem;
+    border-radius: 15px;
+    background-color: var(--color-primary);
+    box-shadow: 0px 0px 5px #a1a1a1;
+}
+
+.topbar-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.topbar-options button:first-child, .topbar-user button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    font-family: var(--font-family);
+    cursor: pointer;
+}
+
+.topbar-options button:first-child:hover, .topbar-user button:hover{
+    background-color: var(--color-button-hover);
+}
+
+.topbar-options-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.topbar-options-form input{
+    height: 30px;
+    padding: 0.5rem;
+    border: 0.5px solid black;
+    border-right: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+@media screen and (max-width: 550px){
+    .topbar-options-form input {
+        width: 50%
+    }
+}
+
+.topbar-options-form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.5px solid black;
+    border-left: none;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    border-radius: 0px 5px 5px 0px;
+    background-color: var(--color-primary);
+}
+
+.topbar-options-form button:hover {
+    background-color: var(--color-button-hover);
+}
