@@ -13,4 +13,5 @@
   box-shadow: 0px 0px 5px #a1a1a1;
   background-color: var(--color-primary);
   font-family: var(--font-family);
+  background-color: red;
 }
